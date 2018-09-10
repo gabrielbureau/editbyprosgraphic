@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EditByPros" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="etf-bM-hFo"/>
+                        <viewControllerLayoutGuide type="bottom" id="3cA-UF-9qB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKt-p9-alF">
+                                <rect key="frame" x="62" y="392" width="251" height="42"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.25882352941176473" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="251" id="KNQ-ML-IRb"/>
+                                    <constraint firstAttribute="height" constant="42" id="iIf-TT-RMz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="SIGN IN WITH INSTAGRAM">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="InstagramSignInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cOZ-7O-g6D"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ElT-Ct-nMu">
+                                <rect key="frame" x="0.0" y="684" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDp-Jc-7jC">
+                                <rect key="frame" x="303" y="748" width="72" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="RPl-8c-13a"/>
+                                    <constraint firstAttribute="height" constant="30" id="fzO-Hj-rEc"/>
+                                </constraints>
+                                <state key="normal" title="LoadMenu"/>
+                                <connections>
+                                    <segue destination="HNm-Vh-XqK" kind="modal" identifier="LoadMenuX1" id="VnQ-cg-mR4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7II-6Z-oPe">
+                                <rect key="frame" x="0.0" y="748" width="72" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="FhK-rp-01f"/>
+                                    <constraint firstAttribute="height" constant="30" id="LFj-Qh-EB8"/>
+                                </constraints>
+                                <state key="normal" title="TestTap"/>
+                                <connections>
+                                    <action selector="TestButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YIC-8M-cQf"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch Screen" translatesAutoresizingMaskIntoConstraints="NO" id="oGP-5K-OXf">
+                                <rect key="frame" x="95" y="194" width="185" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="IKy-7a-VFs"/>
+                                    <constraint firstAttribute="width" constant="185" id="xZ7-hX-fRn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HKt-p9-alF" firstAttribute="top" secondItem="oGP-5K-OXf" secondAttribute="bottom" constant="109" id="2sI-fm-Gjt"/>
+                            <constraint firstItem="HKt-p9-alF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8XZ-0M-VYs"/>
+                            <constraint firstItem="HKt-p9-alF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fgu-xR-tJc"/>
+                            <constraint firstItem="oGP-5K-OXf" firstAttribute="top" secondItem="etf-bM-hFo" secondAttribute="bottom" constant="150" id="KVh-9i-3Vn"/>
+                            <constraint firstItem="7II-6Z-oPe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rm2-kg-f85"/>
+                            <constraint firstItem="oGP-5K-OXf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S14-Tg-qrm"/>
+                            <constraint firstAttribute="trailing" secondItem="qDp-Jc-7jC" secondAttribute="trailing" id="SjI-hK-r0S"/>
+                            <constraint firstItem="3cA-UF-9qB" firstAttribute="top" secondItem="7II-6Z-oPe" secondAttribute="bottom" id="iEX-i8-eXz"/>
+                            <constraint firstItem="3cA-UF-9qB" firstAttribute="top" secondItem="qDp-Jc-7jC" secondAttribute="bottom" id="tJn-dh-Y0O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="InstagramSignInButton" destination="HKt-p9-alF" id="OSb-bW-Hc8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262" y="70"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ajL-TA-sWi">
+            <objects>
+                <viewController id="HNm-Vh-XqK" customClass="ViewController" customModule="EditByPros" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eEZ-ca-RmK"/>
+                        <viewControllerLayoutGuide type="bottom" id="ESO-R2-OJ9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xbe-jQ-RFt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAN-Wp-nlx">
+                                <rect key="frame" x="124" y="102" width="126" height="28"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="UPLOADS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="UploadsX1ButtonTapped:" destination="HNm-Vh-XqK" eventType="touchUpInside" id="i2e-CD-SC8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWr-KO-4U8">
+                                <rect key="frame" x="248" y="102" width="127" height="28"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="UPGRADE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="UpgradeX1ButtonTapped:" destination="HNm-Vh-XqK" eventType="touchUpInside" id="o1x-Ho-DFS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbv-A1-rSj">
+                                <rect key="frame" x="0.0" y="102" width="124" height="28"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="NEW UPLOAD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="NewUploadButtonX1Tapped:" destination="HNm-Vh-XqK" eventType="touchUpInside" id="kne-KB-gUH"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIi-Mj-0w3">
+                                <rect key="frame" x="125" y="126" width="125" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.25882352939999997" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=".">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdk-1m-Xmc">
+                                <rect key="frame" x="0.0" y="126" width="125" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.25882352941176467" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=".">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8W-fk-Qyv">
+                                <rect key="frame" x="250" y="126" width="125" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.25882352941176467" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=".">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hi &lt;username&gt;!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTQ-aY-nbR">
+                                <rect key="frame" x="190" y="59" width="91" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="UW2-hx-s6C"/>
+                                    <constraint firstAttribute="height" constant="15" id="u8A-Ud-wuf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dZ-ip-ZfZ">
+                                <rect key="frame" x="0.0" y="748" width="57" height="30"/>
+                                <state key="normal" title="Go back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" identifier="LoadSignInScreen" id="Z2W-Ud-qdx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Round Icon" translatesAutoresizingMaskIntoConstraints="NO" id="tcm-x9-ZOO">
+                                <rect key="frame" x="40" y="44" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="NYO-CS-Izs"/>
+                                    <constraint firstAttribute="width" constant="44" id="iQM-Tg-vHW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Round Icon" translatesAutoresizingMaskIntoConstraints="NO" id="Shp-jS-9GF">
+                                <rect key="frame" x="290" y="44" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="7GU-Ng-obH"/>
+                                    <constraint firstAttribute="height" constant="44" id="NAs-SF-6vd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qAN-Wp-nlx" firstAttribute="top" secondItem="hTQ-aY-nbR" secondAttribute="bottom" constant="28" id="67S-k2-7bD"/>
+                            <constraint firstItem="Qbv-A1-rSj" firstAttribute="top" secondItem="tcm-x9-ZOO" secondAttribute="bottom" constant="14" id="M2O-l2-I8f"/>
+                            <constraint firstItem="5dZ-ip-ZfZ" firstAttribute="leading" secondItem="Xbe-jQ-RFt" secondAttribute="leading" id="lZj-fn-peB"/>
+                            <constraint firstItem="zWr-KO-4U8" firstAttribute="top" secondItem="Shp-jS-9GF" secondAttribute="bottom" constant="14" id="vSV-8M-UfT"/>
+                            <constraint firstItem="ESO-R2-OJ9" firstAttribute="top" secondItem="5dZ-ip-ZfZ" secondAttribute="bottom" id="xt4-ie-ukd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="NewUploadButtonX1" destination="Qbv-A1-rSj" id="ZBi-lC-0Gk"/>
+                        <outlet property="UnderLineX1" destination="vdk-1m-Xmc" id="Ifg-CW-Ij1"/>
+                        <outlet property="UnderLineX2" destination="NIi-Mj-0w3" id="p25-DY-U9T"/>
+                        <outlet property="UnderLineX3" destination="g8W-fk-Qyv" id="yVw-9m-bHF"/>
+                        <outlet property="UpgradeX1Button" destination="zWr-KO-4U8" id="xtB-E5-aIU"/>
+                        <outlet property="UploadsX1" destination="qAN-Wp-nlx" id="Ld0-2J-LsF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpc-2q-THI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="225.5" y="-3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Launch Screen" width="964" height="343"/>
+        <image name="Round Icon" width="675" height="681"/>
+    </resources>
+</document>
